@@ -26,3 +26,8 @@
 	font-family: cursive;
 	font-size: 4em;
 }
+
+#blurry-text {
+   color: transparent;
+   text-shadow: 0 0 35px rgba(0,0,0,0.8);
+}
