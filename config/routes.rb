@@ -1,4 +1,10 @@
 InfiniteStory::Application.routes.draw do
+    get "posts/view"
+
+  resources :posts
+
+  root to: 'posts#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,28 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#outputs { 
+	font-size: 2em;
+	color: #123456;
+	float: center;
+	font-family: helvetica;
+	text-align: center;
+	&:hover { 
+		color: pink;
+	}
+
+}
+
+#mainpage {
+	text-align: center;
+	font-style: bold;
+}
+
+
+#prompt {
+	text-align: center;
+	font-style: bold;
+	font-family: cursive;
+	font-size: 4em;
+}

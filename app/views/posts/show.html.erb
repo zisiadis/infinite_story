@@ -1,0 +1,24 @@
+
+
+
+	<div id='prompt'>
+		<%= Post.last.line %>...
+		</div> 
+
+<div id='mainpage'>
+<h1>Add to the story!</h1>
+<%= Post.count %> entries so far!
+
+
+<%= form_for(@post) do |f| %>
+		
+
+			<%= f.label 'Go ahead:' %>
+			<%= f.text_field :line %>
+
+	
+
+			<%= f.submit "Submit!", class: 'btn btn-large btn-primary' %>
+
+			<% end %>
+			</div>
