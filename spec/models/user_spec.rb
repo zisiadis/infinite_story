@@ -1,16 +1,15 @@
 # == Schema Information
 #
-# Table name: posts
+# Table name: users
 #
 #  id         :integer         not null, primary key
-#  line       :string(255)
+#  email      :string(255)
 #  created_at :datetime        not null
 #  updated_at :datetime        not null
-#  user_id    :integer
 #
 
 require 'spec_helper'
 
-describe Post do
+describe User do
   pending "add some examples to (or delete) #{__FILE__}"
 end

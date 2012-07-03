@@ -1,0 +1,16 @@
+Welcome to example.com
+===============================================
+ 
+You have successfully signed up to example.com,
+your username 
+ 
+the email you submitted was <%=  %>.
+and the thing you wrote was "<%= @text %>""
+this was post #<%= @post_id %>
+
+<%=Post.find(@post_id-3).line %>
+<%=Post.find(@post_id-2).line %>
+<%=Post.find(@post_id-1).line %>
+<%= @text %>
+ 
+Thanks for joining and have a great day!

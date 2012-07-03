@@ -17,6 +17,11 @@
 			<%= f.label 'Go ahead:' %>
 			<%= f.text_field :line %>
 
+			<%= fields_for @user do |fa| %>
+      			<%=fa.label 'email' %>
+      			<%=fa.text_field :email %>
+  			<% end %>
+
 	
 
 			<%= f.submit "Submit!", class: 'btn btn-large btn-primary' %>

@@ -2,6 +2,7 @@ InfiniteStory::Application.routes.draw do
     get "posts/view"
 
   resources :posts
+  resources :users
 
   root to: 'posts#show'
 
