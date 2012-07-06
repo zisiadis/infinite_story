@@ -6,3 +6,4 @@ end
 
 def show
 	@user = User.new
+end
