@@ -15,13 +15,15 @@
 		<div class = 'form'>
 <%= form_for(@post) do |f| %>
 		
+
 			<div id='line'>
 			<%= f.text_field :line %>
 			</div>
 
-			<div id='#' >
-      		<%=f.label 'email' %>
-      		<%=f.text_field :email, :value => 'to see how the story develops...'%>
+
+			<div id='email' >
+      		<%=f.label 'Enter your email' %>
+      		<%=f.text_field :email, :placeholder => 'to see how the story develops...'%>
   			</div>
 
 	
@@ -31,5 +33,5 @@
 			<% end %>
 		</div>
 			</div>
+					<div id='counter'><div>
 
-<span id='counter'><span>

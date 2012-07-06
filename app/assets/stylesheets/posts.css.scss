@@ -5,14 +5,35 @@
 html {
 	height:100%;
 	position:relative;
-	background-image: url(parchment-head.png), url(parchment.png);
-	background-repeat: no-repeat;
+	background-image:  url(parchment-head.png), url(parchment.png);
+	background-repeat: no-repeat, repeat-y;
 	background-position: center top, center;
-	
 	
 }
 
 
+/* Header */
+
+header {
+	text-align: center;
+	margin-top: 25px;
+
+}
+
+#main-title {
+font-size: 3em;
+font-style: bold;
+
+}
+
+#descriptor-title{
+font-size:2;
+font-style: italic;
+margin-top: 30px;
+
+}
+
+/* Body */
 
 
 
@@ -31,7 +52,7 @@ position:relative;
 	font-family: helvetica;
 	text-align: center;
 	&:hover { 
-		color: pink;
+		color: blue;
 	}
 
 }
@@ -64,37 +85,29 @@ position:relative;
 #hide {display:none;}
 
 #post_line{
-	color:red;
+	border:0px;
 	border-bottom: 1px dashed black;
-	-webkit-appearance: textfield;
-padding: 1px;
-background-color: white;
-border: 2px inset;
-border-image: initial;
-
-cursor: auto;
-}
-
-/* Header */
-
-header {
-	text-align: center;
-	margin-top: 25px;
+	background:none;
+	padding: 1px;
+	line-height: 2em;
+	font-family: cursive;
+	font-size: 2em;
 
 }
 
-#main-title {
-font-size: 3em;
-font-style: bold;
 
+#counter {
+	border: 5px solid blue;
+	float: right;
+	margin-right: 30%;
+	color: gray;
+	opacity: .95;
+	position: fixed;
 }
 
-#descriptor-title{
-font-size:2;
-font-style: italic;
-margin-top: 30px;
 
-}
+
+
 
 /* Footer */
 
