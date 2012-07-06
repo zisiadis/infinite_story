@@ -4,11 +4,10 @@ class PostsController < ApplicationController
 
  def create 
   	@post = Post.create(params[:post])
-  	@user = User.create(params[:user])
-  		flash[:success]= "Thank You dude!"
+  		flash[:success] = "Thank You dude!"
   		redirect_to '/posts/view' 
-  	@post_id = @post.id
-  	@Post.user_id = @User.id
+
+  	UserMailer.welcome_email(@post.id, @post.line).deliver 		
   	end
 
   def view
@@ -18,8 +17,9 @@ class PostsController < ApplicationController
 
 def show
 	@post = Post.new
-	@user = User.new
+
 end
 
 
 end
+

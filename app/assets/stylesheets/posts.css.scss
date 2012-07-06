@@ -2,6 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html {
+	height:100%;
+	position:relative;
+	background-image: url(parchment-head.png), url(parchment.png);
+	background-repeat: no-repeat;
+	background-position: center top, center;
+	
+	
+}
+
+
+
+
+
+body
+{
+height: auto;
+padding-bottom:20px;
+position:relative;
+
+}
+
 #outputs { 
 	font-size: 2em;
 	color: #123456;
@@ -24,10 +46,65 @@
 	text-align: center;
 	font-style: bold;
 	font-family: cursive;
-	font-size: 4em;
+	font-size: 2em;
+
 }
 
-#blurry-text {
+.blurry-text {
    color: transparent;
-   text-shadow: 0 0 35px rgba(0,0,0,0.8);
+   text-shadow: 0 0 18px rgba(0,0,0,0.8);
+   margin: -5px 0 0 0;
+
 }
+
+.red {
+	color: red;
+}
+
+#hide {display:none;}
+
+#post_line{
+	color:red;
+	border-bottom: 1px dashed black;
+	-webkit-appearance: textfield;
+padding: 1px;
+background-color: white;
+border: 2px inset;
+border-image: initial;
+
+cursor: auto;
+}
+
+/* Header */
+
+header {
+	text-align: center;
+	margin-top: 25px;
+
+}
+
+#main-title {
+font-size: 3em;
+font-style: bold;
+
+}
+
+#descriptor-title{
+font-size:2;
+font-style: italic;
+margin-top: 30px;
+
+}
+
+/* Footer */
+
+#foot {
+	background-color: lightGray;
+	width:100%;
+	bottom:0;
+	height: 20px;
+	position:absolute;
+	z-index: -1
+}
+
+
