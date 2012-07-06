@@ -2,8 +2,10 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.create(params[:user])
-end
+	end
 
 def show
 	@user = User.new
+end
+
 end
