@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
-  <body>
-    <h1>Welcome to example.com,</h1>
-    <p>
-      You have successfully signed up to example.com,
-      your username is: 
-    </p>
-    <p>
-      To login to the site, just follow this link: .
-    </p>
-    <p>Thanks for joining and have a great day!</p>
-  </body>
+
+
+
+<p>Thank you so much for contributing to The InfiniteStory!</p>
+ 
+<p>Look at what your line has inspired! </p>
+<br></br>
+<p><b><%=Post.find(@post_id - 3).line %></b></p>
+<p><%=Post.find(@post_id - 2).line %></p>
+<p><%=Post.find(@post_id - 1).line %></p>
+<p><%= @text %></p>
+ <br></br>
+<p>Love it? Hate it? </p>
+<h2><%= link_to 'Keep adding to the story to see where it will go next!', 'http://infinitestory.com' %></h2>

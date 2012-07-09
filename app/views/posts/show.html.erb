@@ -2,15 +2,14 @@
 <div id='prompt'>
 	<div id='number'><%= Post.count %> entries so far! </div>
 
-
-<p class = 'blurry-text'><%= Post.find(Post.count-3).line %></p>
+<br></br>
 <p class = 'blurry-text'><%= Post.find(Post.count-2).line %></p>
 <p class = 'blurry-text'><%= Post.find(Post.count-1).line %></p>
 <p class = 'blurry-text'><%= Post.find(Post.count).line %></p>
-	
+	<br> </br>
 		<%= Post.last.line %>...
 		</div> 
-
+<br></br>
 <div id='mainpage'>
 		<div class = 'form'>
 <%= form_for(@post) do |f| %>
@@ -22,13 +21,15 @@
 
 
 			<div id='email' >
-      		<%=f.label 'Enter your email' %>
+      		<%=f.label 'and enter your email' %>
       		<%=f.text_field :email, :placeholder => 'to see how the story develops...'%>
   			</div>
 
 	
 
-			<%= f.submit "Add to the Story!", class: 'btn btn-large btn-primary' %>
+			<%= f.submit "Add to the Story!", class: 'btn-large btn-custom'%>
+
+
 
 			<% end %>
 		</div>
