@@ -28,13 +28,26 @@ header {
 #main-title {
 font-size: 3em;
 font-style: bold;
+font-family: Zapfino;
+margin-top: 60px;
+/* Safari */
+-webkit-transform: rotate(-5deg);
+
+/* Firefox */
+-moz-transform: rotate(-5deg);
 
 }
 
 #descriptor-title{
-font-size:2;
+font-size:30px;
 font-style: italic;
-margin-top: 30px;
+font-weight: bold;
+font-family: cursive;
+margin-top: 60px;
+line-height: 1;
+
+
+
 
 }
 
@@ -50,16 +63,14 @@ position:relative;
 
 }
 
-#outputs { 
+.outputs { 
 	font-size: 2em;
-	color: #123456;
-	float: center;
-	font-family: helvetica;
+	font-family: cursive;
 	text-align: center;
-	margin-right: 90px;
-	margin-left: 90px;
+	margin: 0 20% 0 20%;
+	line-height: 1.7;
 	&:hover { 
-		color: blue;
+		color: red;
 	}
 
 }
@@ -76,25 +87,33 @@ position:relative;
 	text-align: center;
 	font-style: bold;
 	font-family: cursive;
-	font-size: 2.4em;
+	font-size: 40px;
+	line-height: 1.5;
+	margin: 0 20% 0 20%;
 
 }
 
 .blurry-text {
    color: transparent;
    text-shadow: 0 0 18px rgba(0,0,0,0.8);
-   margin: 30px 0 0 0;
-   font-size: 1.7em;
+   line-height: 1.7;
+   text-align: center;
+	font-style: bold;
+	font-family: cursive;
+	font-size: 40px;
+	margin: 0 20% 0 20%;
 
 }
+
+/* FORM */
 
 #post_line {
 	border:0px;
 	border-bottom: 1px dashed black;
 	background:none;
-	line-height: 2.4em;
+	line-height: 1.7;
 	font-family: cursive;
-	font-size: 2.4em;
+	font-size: 40px;
 	width: 700px;
 	height: 60px;
 }
@@ -126,10 +145,29 @@ position:relative;
   -webkit-font-smoothing: antialiased;
 }
 
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
 
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+ }
 
 
 /* Footer */
+
+.fb { 
+	
+	text-align: center;
+
+}
+
 
 #foot {
 	background-color: lightGray;
@@ -139,6 +177,31 @@ position:relative;
 	position:absolute;
 	z-index: -1
 }
+
+.fb { 
+	
+	text-align: center;
+
+}
+
+.glow {
+	width:75px;
+	height:20px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 5px;
+-webkit-animation-name: greenPulse;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes greenPulse {
+from { background-color: #e9d3b1; -webkit-box-shadow: 0 0 9px #333; }
+50% { background-color: #e9d3b1; -webkit-box-shadow: 0 0 18px blue; }
+to { background-color: #e9d3b1; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+
 
 @import 'bootstrap';
 

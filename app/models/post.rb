@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
 
 
 
-  validates :line, presence: true, length: {maximum: 100}
+  validates :line, presence: true, length: {maximum: 500} 
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, format: {with: VALID_EMAIL_REGEX} 
 end

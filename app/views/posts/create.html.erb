@@ -1,13 +1,12 @@
 
-
-	<!--<div id='number'><%= Post.count %> entries so far! </div> -->
+<div id='prompt'>
+	<div id='number'><%= Post.count %> entries so far! </div>
 
 <br></br>
 <p class = 'blurry-text'><%= Post.find(Post.count-2).line %></p>
 <p class = 'blurry-text'><%= Post.find(Post.count-1).line %></p>
 <p class = 'blurry-text'><%= Post.find(Post.count).line %></p>
 	<br> </br>
-	<div id='prompt'>
 		<%= Post.last.line %>...
 		</div> 
 <br></br>
@@ -27,7 +26,6 @@
       		<%=f.text_field :email, :placeholder => 'to see how the story develops...'%>
   			</div>
   			<div id = 'email-alert'></div>
-
 	
 
 			<%= f.submit "Add to the Story!", class: 'btn-large btn-custom'%>
@@ -37,6 +35,5 @@
 			<% end %>
 		</div>
 			</div>
-				<!-- <div id='counter'><div> -->
-
+					<div id='counter'><div>
 

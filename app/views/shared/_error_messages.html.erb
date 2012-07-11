@@ -1,0 +1,20 @@
+<% if @post.errors.any? %>
+	<div id="error_explanation">
+	
+	<% if @post.line.empty? %>
+		<%= "You can't add to the story with a blank line silly!" %>
+		<% end %>
+
+		<% if @post.email.empty? %>
+		<%= "Don't you wanna see where the story goes?" %>
+		<% end %>
+
+
+
+
+		</div>
+
+
+
+
+<%end%>
