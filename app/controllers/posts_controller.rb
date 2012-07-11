@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 		UserMailer.welcome_email(@post.id, @post.line).deliver
 
 	else 
-	render 'show'
+	render 'create'
 		
 	end 	
  end

@@ -5,7 +5,9 @@
 		<%= "You can't add to the story with a blank line silly!" %>
 		<% end %>
 
-		<% if @post.email.empty? %>
+
+
+		<% if @post.email.empty? && !@post.line.empty? %>
 		<%= "Don't you wanna see where the story goes?" %>
 		<% end %>
 
