@@ -3,15 +3,25 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/*
 body {
-	height:100%;
+
 	position:relative;
-	background-image:  url(parchment-head.png), url(parchment.png);
+	background-image:  url(parchment-head.png), url(parchment.png)
 	background-repeat: no-repeat, repeat-y;
 	background-position: center top, center;
-	
+	height:100%;
+	width:100%;
 }
+*/
 
+body {
+background: url(parchment-head.png) center top no-repeat,
+			url(parchment.png) center top repeat-y,
+			url(Desk_Texture.jpeg);
+
+
+}
 
 
 
@@ -78,7 +88,9 @@ position:relative;
 	font-size: 2em;
 	font-family: cursive;
 	text-align: center;
-	margin: 0 20% 0 20%;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 	line-height: 1.7;
 	&:hover { 
 		color: red;
@@ -100,7 +112,9 @@ position:relative;
 	font-family: cursive;
 	font-size: 40px;
 	line-height: 1.5;
-	margin: 0 20% 0 20%;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
@@ -112,7 +126,9 @@ position:relative;
 	font-style: bold;
 	font-family: cursive;
 	font-size: 40px;
-	margin: 0 20% 0 20%;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
@@ -173,6 +189,13 @@ position:relative;
 
 
 /* Footer */
+
+#footer-text {
+	font-size: 18px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .fb { 
 	
