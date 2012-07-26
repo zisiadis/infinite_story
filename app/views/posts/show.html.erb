@@ -3,9 +3,9 @@
 	<!--<div id='number'><%= Post.count %> entries so far! </div> -->
 
 <br></br>
+<p class = 'blurry-text'><%= Post.find(Post.count-3).line %></p>
 <p class = 'blurry-text'><%= Post.find(Post.count-2).line %></p>
 <p class = 'blurry-text'><%= Post.find(Post.count-1).line %></p>
-<p class = 'blurry-text'><%= Post.find(Post.count).line %></p>
 	<br> </br>
 	<div id='prompt'>
 		<%= Post.last.line %>...
