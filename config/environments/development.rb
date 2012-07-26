@@ -43,7 +43,7 @@ config.action_mailer.delivery_method :smtp
     port: 587,
     authentication: 'plain',
     user_name: 'infinitestoryapp@gmail.com',
-    password: 'truckfunk985'
+    password: 'tthree27'
   }
 
 
