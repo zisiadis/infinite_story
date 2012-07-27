@@ -1,13 +1,24 @@
 <p id = 'thanks'>Thanks for submitting you poetic genius you!</p>
  <p id = 'thanks'>Watch for an email to see how the story develops.</p> 
 <br></br>
- <% Post.all.each do |user| %>
-  <div class='outputs'> <%= user.line %> </div>
-<% end %>
+
+
+<% Post.all.each do |user| %>
+  <div class=<%=cycle('outputs-black', 'outputs-gray')%>>
+<%= user.line %> </div>
+<% end %>   
+
+
+
+
+
+
+
+
+
 <br> </br>
 <div class = 'glow fb'>
 <iframe src="//www.facebook.com/plugins/like.php?href=http://www.infinitestory.net/&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe> </div>
-
 <br></br>
 
 <div id='footer-text'> 
