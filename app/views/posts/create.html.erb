@@ -3,30 +3,34 @@
 	<!--<div id='number'><%= Post.count %> entries so far! </div> -->
 
 <br></br>
+<p class = 'blurry-text'><%= Post.find(Post.count-3).line %></p>
 <p class = 'blurry-text'><%= Post.find(Post.count-2).line %></p>
-<p class = 'blurry-text'><%= Post.find(Post.count-1).line %></p>
-<p class = 'blurry-text'><%= Post.find(Post.count).line %></p>
+<p class = 'blurry-text'></p>
 	<br> </br>
-	<div id='prompt'>
-		<%= Post.last.line %>...
+	<div class='prompt'>
+		<p class = 'prompt'><%= Post.find(Post.count-1).line %></p>
+		<%= Post.last.line %>
 		</div> 
 <br></br>
 <div id='mainpage'>
 		<div class = 'form'>
 <%= form_for(@post) do |f| %>
-<%= render 'shared/error_messages' %>
+<%= render 'shared/error_messages' %> 
 		
 
 			<div id='line'>
-			<%= f.text_area :line, :size => "10x15"%>
+			<%= f.text_area :line, :size => "10x15", :placeholder => '...Where will you take the story next?' %>
 
 			</div>
 
 			<div id='xemail' >
       		<label for="post_and enter your email">And enter your email</label>
-      		<div class="field_with_errors"><input id="xpost_email" name="post[email]" placeholder="to see how the story develops..." size="30" type="text" value="" /></div>
+      		<div class="field_with_errors"><input id="xpost_email" name="post[email]" placeholder="to see how the story develops..." size="30" type="text" value="" /></div> 
   			</div>
   			<div id = 'email-alert'></div>
+  			<p>(We hate spam and will only email you ONCE)</p>
+  			
+
 
 	
 
